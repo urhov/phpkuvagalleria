@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="XSLT.xsl"?>
-    <document>
-    <kuvat>
-    </kuvat>
-    </document>
+<gallery>
+    <image>
+        <filename>paraiso.jpg</filename>
+        <author>Urho</author>
+        <date>2020-09-08</date>
+        <time>10:00</time>
+    </image>
+    <image>
+        <filename>paraiso.jpg</filename>
+        <author>Urho</author>
+        <date>2020-09-08</date>
+        <time>10:00</time>
+    </image>
+</gallery>
