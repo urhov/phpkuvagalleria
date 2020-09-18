@@ -1,21 +1,27 @@
-
 <?php
 session_start();
-include "add_kuva.php";
+if (isset($_POST['username']){
+    
+}
+else {
+    echo "et ole kirjautunut";
+}
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <form action="load_kuva.php" method="post" enctype="multipart/form-data">
 </head>
 <body>
-    <div id="img">
-    
-    
-    </div>
+<?php 
+
+
+
+
+?>    
 </body>
 </html>

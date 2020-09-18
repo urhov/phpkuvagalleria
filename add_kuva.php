@@ -32,7 +32,7 @@ if (!isset(($_SESSION['username'])){
  $kuva = $_GET["kuva"];
  
  
-
+    
 ?>
 
 </body>
