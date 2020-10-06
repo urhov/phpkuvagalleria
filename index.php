@@ -23,7 +23,12 @@ session_start()
 <img src="img/paraiso.jpg" alt="paratiisi">
 </div>
 
-<form action="<?php echo $_SERVER['PHP_SELF' "method="post"></form>
+<form action="<?php echo $_SERVER['PHP_SELF'];?> "method="post"></form>
+  <label for="username">käyttäjä</label>
+  <input type="pwd" name="pwd">
+
+ <input type="submit" value="login">
+
 
 
 <script>
