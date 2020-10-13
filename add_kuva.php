@@ -2,10 +2,10 @@
 session_start();
 
 
-if (!isset(($_SESSION['username']))){
-    echo "ei lupaa tälle sivulle";
-    die();
-}
+//if (!isset(($_SESSION['username']))){
+  //  echo "ei lupaa tälle sivulle";
+    //die();
+//}
 //$kuva = imagecreatetruecolor(120, 20);
 
 //$text_color = imagecolorallocate($kuva , 233, 14, 91); 
@@ -21,18 +21,12 @@ if (!isset(($_SESSION['username']))){
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-<img src="paraiso.jpg" alt="">
-</div>
-<div>
-<button id="btn"></button>
-</div>
-
-<?php 
- $kuva = $_GET["kuva"];
-
-
-?>
-
+<form action="functions.php" method="post" enctype="multipart/from-data">
+    <label for="author">author</label>
+    <input type="text" name="author">
+    <br>
+    <input type="file" name="fileToUpload">
+    <input type="submit" value="upload" name="submit">
+</form>
 </body>
 </html>
