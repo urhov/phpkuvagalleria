@@ -2,7 +2,7 @@
 session_start();
 
 
-if (!isset(($_SESSION['username'])){
+if (!isset(($_SESSION['username']))){
     echo "ei lupaa tälle sivulle";
     die();
 }
@@ -30,9 +30,8 @@ if (!isset(($_SESSION['username'])){
 
 <?php 
  $kuva = $_GET["kuva"];
- 
- 
-    
+
+
 ?>
 
 </body>

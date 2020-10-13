@@ -24,12 +24,9 @@ if (move_uploaded_file($_FILES['filetoupload']['tmp_name'], $target_file))
 echo "the file". basename($_FILES["FileToUpload"]["name"]). "has been uploaded."
 function saveDataToXML($data){
 $author = $data['author'];
-$xml = simplexm_load_file('data/galleria.xml');
+$xml = simplexml_load_file('data/galleria.xml');
 
-//$new_pic = 
-//$new_pic =
-//$new_pic = 
-//$new_pic =
+
 }
 ?>    
 </body>

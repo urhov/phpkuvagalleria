@@ -1,10 +1,20 @@
 <?php
 session_start();
 
-$username = $_GET = ['username'];
 
 
-if (isset($_POST['username']) && isset($_POST('passwd'))) {
+$passwd = "qweerty";
+$hash = '$2y$10$sFm47bNxSYdmaKUbteLZzOMHdupw3CbweufOv8zkisKvEAtogXoye';
+
+if (password_verify($passwd,$hash)){
+    echo "salasana on oikien";
+} else {
+    echo "salasana on väärin";
+}
+
+if (isset($_POST['username']) && isset($_POST['passwd'])) {
+
+    include "connect_db.php";
 
     $username = $_POST['username'];
     $passwd = $_POST['passwd'];
@@ -39,7 +49,7 @@ if (isset($_POST['username']) && isset($_POST('passwd'))) {
 
 
 
-include "connect_db.php";
+
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +69,6 @@ include "connect_db.php";
             <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">kommenttisivusto</li>
             <li><a href="kirjaudu.php">kirjaudu</a></li>
-            <li><a href="rekisteroidy.php">rekisteröidy</a></li>
             </ul>
         </div>
     </nav>        
@@ -82,9 +91,13 @@ include "connect_db.php";
                 
                 <label type="text" for="user">Käyttäjänimi:</label>
                 <br>
-                <input type="text" name="username">    
+                <input type="text" name="username"> 
                 <br>
                 <label type="password" for="pwd">salasana:</label>
+                <br>
+                <input type="password" name="passwd">    
+                <br>
+                <label type="password" for="pwd">uudestaan salasana:</label>
                 <br>
                 <input type="password" name="passwd">    
         

@@ -1,13 +1,10 @@
 <?php
-$db_servername = "localhost";
-$db_username = "root";
-$db_name = "työpaikka";
-$db_password = ""; 
+$db_passwd = ""; 
 
 $errors = [];
 
 // Create connection
-$conn = new mysqli($db_servername, $db_username, $db_passwd, $db_kuva);
+$conn = new mysqli($db_servername, $db_username, $db_passwd, $db_name);
 
 // Check connection
 if ($conn->connect_error) {
@@ -21,4 +18,4 @@ if (!$conn->set_charset("utf8")) {
 } else {
     $errors[] = "Current character set: " . $conn->character_set_name();
 }
-
+?>

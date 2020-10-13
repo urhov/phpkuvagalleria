@@ -16,18 +16,18 @@ session_start()
 </head>
 <body>
 <div class="container">
-  <li><a href="register.php">kirjaudu</a></li>
-  <li><a href="add_kuva.php">lisää kuva</a></li>
+  <a href="kirjaudu.php">kirjaudu</a>
+  <br>
+  <a href="add_kuva.php">lisää kuva</a>
+  <br>
 </div>
 <div>
 <img src="img/paraiso.jpg" alt="paratiisi">
 </div>
 
 <form action="<?php echo $_SERVER['PHP_SELF'];?> "method="post"></form>
-  <label for="username">käyttäjä</label>
-  <input type="pwd" name="pwd">
+  
 
- <input type="submit" value="login">
 
 
 
