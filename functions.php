@@ -12,3 +12,6 @@ $new_pic->addChild('date', date());
 $new_pic->addChild('time', time());
 }
 ?>
+
+
+    

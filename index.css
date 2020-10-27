@@ -1,4 +1,14 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: darkgray;
+    background-color: dodgerblue;
+
+}
+.container {
+    padding:3px;
+    height: 200px;
+    width: 50%;
+    width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
