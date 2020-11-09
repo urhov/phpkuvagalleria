@@ -6,8 +6,8 @@ session_start()
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="galleria.xml">
-<link rel="stylesheet" href="add_kuva.php">
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="upload.php">
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <h1>kuvat</h1>
@@ -16,18 +16,11 @@ session_start()
     <title>kuvat</title>
 </head>
 <body>
-<div class="container">
-  <a href="add_kuva.php">lisää kuva</a>
-  <br>
-</div>
-<div>
-<img src="img/paraiso.jpg" alt="paratiisi">
-</div>
 
-<form action="<?php echo $_SERVER['PHP_SELF'];?> "method="post"></form>
-  
-
-
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="FileToUpload" id="fileToUpload">
+    <input type="submit" value="upload" name="submit">
+<form> 
 
 
 <script>
